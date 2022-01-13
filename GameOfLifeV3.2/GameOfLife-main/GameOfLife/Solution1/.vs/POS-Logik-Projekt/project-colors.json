@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "542f51e2-7741-4457-8a12-683ce4a86faa": {
+      "ProjectGuid": "542f51e2-7741-4457-8a12-683ce4a86faa",
+      "DisplayName": "GameOfLife",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

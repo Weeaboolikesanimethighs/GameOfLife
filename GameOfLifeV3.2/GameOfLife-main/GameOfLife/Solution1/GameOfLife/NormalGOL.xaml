@@ -1,0 +1,24 @@
+﻿<Window x:Class="GameOfLife.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfLife"
+        mc:Ignorable="d"
+        Title="NormalGOL" ResizeMode="NoResize" Height="720" Width="980">
+    <Grid>
+        <Button x:Name="startButton" Content="Start" FontSize="12
+" HorizontalAlignment="Left" Margin="768,469,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="55" Width="184" Click="StartButton_Click"/>
+        <Canvas x:Name="gameArea" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="700" Background="Black" Margin="29,24,0,0"/>
+        <Button x:Name="clearButton" Content="Clear" FontSize="12 " HorizontalAlignment="Left" Margin="162,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="114" Click="ClearButton_Click"/>
+        <Button x:Name="pauseButton" Content="Pause" FontSize="12 " HorizontalAlignment="Center" Margin="0,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="112" Click="pauseButton_Click"/>
+        <Button x:Name="forwardButton" Content="Step Forward" FontSize="12 " HorizontalAlignment="Left" Margin="299,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="forwardButton_Click"/>
+        <Button x:Name="loadButton" Content="Load" FontSize="12 " Margin="838,575,28,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Click="loadButton_Click"/>
+        <Button x:Name="saveImageButton" Content="Save as Image" FontSize="12 " HorizontalAlignment="Left" Margin="703,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="saveImageButton_Click"/>
+        <Button x:Name="saveButton" Content="Save" FontSize="12 " HorizontalAlignment="Left" Margin="569,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="saveButton_Click"/>
+        <Button x:Name="randomButton" Content="Random" FontSize="12 " HorizontalAlignment="Left" Margin="29,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113                 " Click="randomButton_Click"/>
+        <TextBox Name ="numberOfRandom" HorizontalAlignment="Left" PreviewTextInput="PreviewTextInput" Margin="29,639,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="22" RenderTransformOrigin="0.513,-1.18"/>
+        <Image x:Name="_94b_png" HorizontalAlignment="Left" Height="168" Margin="760,24,0,0" VerticalAlignment="Top" Width="368" Source="94b.png"/>
+
+    </Grid>
+</Window>

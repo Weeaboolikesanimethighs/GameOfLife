@@ -1,0 +1,26 @@
+﻿<Window x:Class="GameOfLife.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfLife"
+        mc:Ignorable="d"
+        Title="NormalGOL" ResizeMode="NoResize" Height="720" Width="980">
+    <Grid>
+        <Button x:Name="startButton" Content="Start" FontSize="12
+" HorizontalAlignment="Left" Margin="29,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="StartButton_Click"/>
+        <Canvas x:Name="gameArea" HorizontalAlignment="Center" Height="499" VerticalAlignment="Top" Width="700" Background="Black" Margin="0,61,0,0"/>
+        <Button x:Name="clearButton" Content="Clear" FontSize="12 " HorizontalAlignment="Left" Margin="163,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="ClearButton_Click"/>
+        <Button x:Name="pauseButton" Content="Pause" FontSize="12 " HorizontalAlignment="Center" Margin="0,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="pauseButton_Click"/>
+        <Button x:Name="forwardButton" Content="Step Forward" FontSize="12 " HorizontalAlignment="Left" Margin="298,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="forwardButton_Click"/>
+        <Button x:Name="loadButton" Content="Load" FontSize="12 " Margin="839,607,28,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Click="loadButton_Click"/>
+        <Button x:Name="saveImageButton" Content="Save as Image" FontSize="12 " HorizontalAlignment="Left" Margin="712,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="saveImageButton_Click"/>
+        <Button x:Name="saveButton" Content="Save" FontSize="12 " HorizontalAlignment="Left" Margin="578,607,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.481,-0.884" Height="64" Width="113" Click="saveButton_Click"/>
+        <RadioButton x:Name="c_blue" IsChecked="True" GroupName="colors" Content="Blue" HorizontalAlignment="Left" Margin="0,151,0,0" VerticalAlignment="Top" Height="43" Width="135" FontSize="18"/>
+        <RadioButton x:Name="c_green" GroupName="colors" Content="Green" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top" Height="42" Width="135" FontSize="18"/>
+        <RadioButton x:Name="c_brown" GroupName="colors" Content="Brown" HorizontalAlignment="Left" Margin="0,241,0,0" VerticalAlignment="Top" Height="42" Width="135" FontSize="18"/>
+        <RadioButton x:Name="c_black" GroupName="colors" Content="Black" HorizontalAlignment="Left" Margin="0,283,0,0" VerticalAlignment="Top" Height="42" Width="135" FontSize="18"/>
+        <Label Content="Colors" HorizontalAlignment="Left" Height="38" Margin="8,108,0,0" VerticalAlignment="Top" Width="93" FontSize="24" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
